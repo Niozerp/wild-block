@@ -1,0 +1,61 @@
+.champion-portrait {
+    position: relative;
+    cursor: pointer;
+}
+
+.champion-portrait img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.champion-portrait.highlight {
+    box-shadow: 0 0 15px 5px #00f; /* blue glow */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.blocked-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocked-overlay::before,
+.blocked-overlay::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 10px;
+    background-color: red;
+}
+
+.blocked-overlay::before {
+    transform: rotate(45deg);
+}
+
+#blocked-champions-section {
+    border-bottom: 1px solid #444;
+    padding-bottom: 1rem;
+}
+
+.autoComplete_wrapper > ul > li {
+    background-color: #343a40;
+    color: #fff;
+    border-bottom: 1px solid #444;
+}
+
+.autoComplete_wrapper > ul > li:hover {
+    background-color: #495057;
+}
+
+.autoComplete_wrapper > ul > li[aria-selected="true"] {
+    background-color: #0d6efd;
+}
+
