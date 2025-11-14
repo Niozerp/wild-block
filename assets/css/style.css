@@ -40,6 +40,10 @@
     transform: rotate(45deg);
 }
 
+.blocked-overlay::after {
+    transform: rotate(-45deg);
+}
+
 #blocked-champions-section {
     border-bottom: 1px solid #444;
     padding-bottom: 1rem;
